@@ -1,0 +1,30 @@
+Instructions:
+
+ 
+
+1) Copy the link location of the script.
+
+2) SSH into your Ubuntu/Debian machine, and login as root. ( Ubuntu | sudo -i | Debian | su )
+
+2a) Make sure the ca-certificates package is installed.
+
+apt-get update; apt-get install ca-certificates wget -y
+3) Download the script by executing the following command. ( change it to your wanted version )
+
+wget https://get.glennr.nl/unifi/install/unifi-5.12.35.sh
+Install the latest and greatest UniFi Network Controller with 1 line. ( copy paste )
+rm -rf unifi-latest.sh &> /dev/null; wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh && bash unifi-latest.sh
+4) Make the script executable ( change it to the script version you downloaded )
+
+chmod +x unifi-5.12.35.sh
+5) After you downloaded the script and made it executable you need to run it, by executing the following command.
+
+./unifi-5.12.35.sh
+You can add -skip behind ./unifi-5.12.22.sh if you want it to skip the Script Removal and Repository questions.
+Example: ./unifi-5.12.35.sh -skip
+6) Once the installation is completed browse to your controller.
+
+https://ip.of.your.server:8443
+7) Kudo/Upvote my post 😀
+
+ 
